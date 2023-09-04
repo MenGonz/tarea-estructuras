@@ -1,4 +1,4 @@
-class Usuario(): #Se define la clase usuario
+class Usuario: #Se define la clase usuario
     def __init__(self,id,nombre,fecha_nac=None,ciudad_nac=None,dir=None,tel=None,email=None):
         self.id = id
         self.nombre = nombre
@@ -42,10 +42,10 @@ class Usuario(): #Se define la clase usuario
     #Tostring  
     def __str__(self):
         
-        return f"""El usuario {self.get_nombre} con id {self.get_id} tiene la siguiente información: 
-                   Fecha de nacimiento: {self.get_fecha_nac}
-                   Ciudad de nacimiento: {self.get_ciudad_nac}
-                   Dirección: {self.get_dir}
-                   Teléfono: {self.get_tel}
-                   Email: {self.get_email}"""
+        return f"""El usuario {self.get_nombre()} con id {self.get_id()} tiene la siguiente información: 
+                   Fecha de nacimiento: {self.get_fecha_nac()}
+                   Ciudad de nacimiento: {self.get_ciudad_nac()}
+                   Dirección: {self.get_dir()}
+                   Teléfono: {self.get_tel()}
+                   Email: {self.get_email()}"""
         

@@ -1,6 +1,0 @@
-Usuarios,id,nombre,fecha_nac,ciudad_nac,dir,tel,email
-0,123,Juan,03/02/2002,Medellin,calle/25/1-1/Aranjuez/Medellin,123456789,juan@gmail.com
-1,124,Jose,03/02/2002,Rionegro,calle/22/1-1/Rionegro/Rionegro,213456789,jose@gmail.com
-2,125,Jairo,03/02/2002,Barrancabermeja,calle/26/1-1/Aranjuez/Medellin,312456789,jairo@gmail.com
-3,126,Jaime,03/02/2002,Nueva York,calle/25/1-1/Manhatan/NY,412356789,jaime@gmail.com
-4,127,Boqui,03/02/1952,Tunja,calle/25/1-1/Centro/Tunja,512346789,boqui@gmail.com
