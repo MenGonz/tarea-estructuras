@@ -6,7 +6,7 @@ class Direccion():
         self.nomenclatura = nomenclatura
         self.barrio = barrio
         self.ciudad = ciudad
-        
+         
     #Getters
     def get_calle(self):
         return self.calle
