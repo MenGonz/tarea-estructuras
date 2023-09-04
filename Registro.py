@@ -39,3 +39,5 @@ class Registro:
         for x in self.Usuarios:
             if x!= None and x.get_id() == id:
                 return x
+            
+    
