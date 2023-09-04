@@ -1,5 +1,6 @@
 import csv
 class Registro:
+    global se_puede_agregar
     def __init__(self, Usuarios, numRegistros):
         self. Usuarios = Usuarios
         self.numRegistros = numRegistros
