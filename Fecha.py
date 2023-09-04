@@ -1,16 +1,12 @@
 class Fecha: #Se define la clase fecha
-    def __init__(self, dia, mes, año):
-        self.dia = dia
-        self.mes = mes
-        self.año = año
+    def __init__(self, fecha):
+        self.fecha = fecha
     #Se ajusta el formato   
     def get_fecha(self):
-        return f"{self.dia}/{self.mes}/{self.año}"
+        return f"{self.fecha}"
     
-    def set_fecha(self, dia, mes, año):
-        self.dia = dia
-        self.mes = mes
-        self.año = año
+    def set_fecha(self, fecha):
+        self.fecha = fecha
     #Tostring    
     def __str__(self):
-        return f"Dia: {self.dia}\nMes: {self.mes}\nAño: {self.año}"
+        return f"Fecha: {self.get_fecha()}"
