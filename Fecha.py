@@ -12,3 +12,5 @@ class Fecha:
         self.mes = mes
         self.año = año
         
+    def __str__(self):
+        return f"Dia: {self.dia}\nMes: {self.mes}\nAño: {self.año}"
