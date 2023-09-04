@@ -33,8 +33,8 @@ class Usuario():
         self.fecha_nac = fecha_nac
     def set_ciudad_nac(self, ciudad_nac):
         self.ciudad_nac = ciudad_nac
-    def set_dir(self, dir):
-        self.dir = dir
+    """def set_dir(self, dir):
+        self.dir = dir"""
     def set_tel(self, tel):
         self.tel = tel
     def set_email(self, email):
