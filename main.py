@@ -13,7 +13,8 @@ with open("datos.csv") as datos:
         registro.agregar(usuario)
         
 
-if input("¿Desea añadir un nuevo registro? (si/no)") == "si":
+res = input("¿Desea añadir un nuevo registro? (si/no)")
+if res == "si":
     nombre = input("Ingrese el nombre del usuario: ")
     id = input("Ingrese el id del usuario: ")
     fecha_nac = input("Ingrese la fecha de nacimiento del usuario: ")
@@ -23,10 +24,12 @@ if input("¿Desea añadir un nuevo registro? (si/no)") == "si":
     email = input("Ingrese el email del usuario: ")
     registro.agregar(Usuario(id,nombre,fecha_nac,ciudad_nac,dir,tel,email))
     
-if input("¿Desea eliminar un registro? (si/no)") == "si":
+res = input("¿Desea eliminar un registro? (si/no)")
+if res == "si":
     id = input("Ingrese el id del usuario a eliminar: ")
     registro.eliminar(id)
     
-if input("¿Desea buscar un registro? (si/no)") == "si":
+res= input("¿Desea buscar un registro? (si/no)")
+if res == "si":
     id = input("Ingrese el id del usuario a buscar: ")
     print(registro.buscar(id))
