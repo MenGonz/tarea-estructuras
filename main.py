@@ -12,7 +12,6 @@ with open("datos.csv") as datos:
         usuario = Usuario(row[0],row[1],row[2],row[3],row[4],row[5],row[6])
         registro.agregar(usuario)
         
-
 res = input("¿Desea añadir un nuevo registro? (si/no)")
 if res == "si":
     nombre = input("Ingrese el nombre del usuario: ")
@@ -23,6 +22,12 @@ if res == "si":
     tel = input("Ingrese el teléfono del usuario: ")
     email = input("Ingrese el email del usuario: ")
     registro.agregar(Usuario(id,nombre,fecha_nac,ciudad_nac,dir,tel,email))
+    vec = [id,nombre,fecha_nac,ciudad_nac,dir,tel,email]
+    with open('datos.csv', 'a', encoding='UTF8', newline='') as f:
+        writer = csv.writer(f)
+
+        writer.writerow(vec)
+    
     
 res = input("¿Desea eliminar un registro? (si/no)")
 if res == "si":
@@ -33,3 +38,5 @@ res= input("¿Desea buscar un registro? (si/no)")
 if res == "si":
     id = input("Ingrese el id del usuario a buscar: ")
     print(registro.buscar(id))
+
+print(registro)
