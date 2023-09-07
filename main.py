@@ -48,4 +48,5 @@ for i in range(len(registro.get_usuarios())):
                 writer.writerow(vec)
     
 
-#print(registro)
+registro.sortear()
+print(registro)

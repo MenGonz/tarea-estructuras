@@ -23,7 +23,6 @@ class Registro:
     def sortear(self):
         for i in range(1, self.numRegistros):
             
-            
             j = i-1
             if self.Usuarios[j] != None and self.Usuarios[j+1] != None:
                 
