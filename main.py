@@ -23,7 +23,6 @@ if res == "si":
     email = input("Ingrese el email del usuario: ")
     registro.agregar(Usuario(id,nombre,fecha_nac,ciudad_nac,dir,tel,email))
     
-    
 res = input("¿Desea eliminar un registro? (si/no)")
 if res == "si":
     id = input("Ingrese el id del usuario a eliminar: ")

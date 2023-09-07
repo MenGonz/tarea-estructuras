@@ -38,10 +38,12 @@ class Registro:
         
             
     def eliminar(self, id):
-        for x in self.Usuarios:
-            if x != None and x.get_id() == id:
-                x = None 
+        for i in range(len(self.Usuarios)):
+            if self.Usuarios[i] != None and self.Usuarios[i].get_id() == id:
+                #print(self.Usuarios[i])
+                self.Usuarios[i] = None 
                 self.sortear()
+                break
     
     def buscar(self, id):
         for x in self.Usuarios:
