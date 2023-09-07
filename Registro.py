@@ -48,6 +48,8 @@ class Registro:
         for x in self.Usuarios:
             if x!= None and x.get_id() == id:
                 return x
+    def get_usuarios(self):
+        return self.Usuarios
             
     def __str__(self):
         r = ""
