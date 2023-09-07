@@ -23,12 +23,11 @@ if res == "si":
     email = input("Ingrese el email del usuario: ")
     registro.agregar(Usuario(id,nombre,fecha_nac,ciudad_nac,dir,tel,email))
     
-m = 0 
+    
 res = input("¿Desea eliminar un registro? (si/no)")
 if res == "si":
     id = input("Ingrese el id del usuario a eliminar: ")
     registro.eliminar(id)
-    m+=1
     
 res= input("¿Desea buscar un registro? (si/no)")
 if res == "si":
@@ -50,5 +49,5 @@ for i in range(len(registro.get_usuarios())):
                 writer.writerow(vec)
     
 
-print(registro.get_usuarios())
-print(m)
+registro.sortear()
+print(registro)
